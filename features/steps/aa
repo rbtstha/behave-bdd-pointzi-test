@@ -1,0 +1,9 @@
+	Scenario: attempt login with incorrect credentials
+		Given login page
+		When incorrect credentials are passed
+		Then error message in the login page
+
+	Scenario: attempt login without credentials
+		Given login page
+		When clicked on login  button
+		Then error message in the login page
